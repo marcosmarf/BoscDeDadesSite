@@ -41,6 +41,7 @@
 }
 .dwn-btn {
     border-color: #7FE5B8;
+    border: 2px solid var(--btn-color);
     color: #3bbf6a;
     background: rgba(127, 229, 184, 0.10);
     font-family: var(--font-mono);
