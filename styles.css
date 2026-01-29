@@ -1,3 +1,113 @@
+/* --- BOTONES DE DESCARGA MODERNOS --- */
+.dwn-btns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+.dwn-btn-modern {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    font-family: var(--font-mono);
+    font-size: 1.08rem;
+    font-weight: 700;
+    border: 2px solid var(--btn-color);
+    color: #3bbf6a;
+    background: rgba(127, 229, 184, 0.12);
+    border-radius: 0.8em;
+    padding: 0.7em 1.5em;
+    transition: background 0.18s, color 0.18s, border 0.18s;
+    text-decoration: none;
+    box-shadow: 0 2px 12px rgba(127,229,184,0.08);
+    margin-bottom: 0.2em;
+}
+.dwn-btn-modern:hover {
+    background: #7FE5B8;
+    color: #0a3d1e;
+    border-color: #3bbf6a;
+}
+/* --- BOTONES DE DESCARGA --- */
+.dwn-btns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4.5rem;
+}
+.dwn-btn {
+    border-color: #7FE5B8;
+    color: #3bbf6a;
+    background: rgba(127, 229, 184, 0.10);
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 1.2em;
+    padding: 0.6em 1.5em;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.dwn-btn:hover {
+    background: #7FE5B8;
+    color: #0a3d1e;
+    border-color: #3bbf6a;
+}
+/* --- TAGS INFORMATIVES --- */
+.info-tags-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.info-tag {
+    position: relative;
+    display: inline-block;
+    background: rgba(127, 229, 184, 0.12);
+    color: #3bbf6a;
+    border: 1.5px solid #7FE5B8;
+    border-radius: 1.2em;
+    padding: 0.4em 1.1em;
+    font-size: 1.05rem;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-bottom: 0.5rem;
+}
+.info-tag:hover {
+    background: #7FE5B8;
+    color: #0a3d1e;
+}
+.info-tag::after {
+    content: attr(data-tooltip);
+    visibility: hidden;
+    opacity: 0;
+    width: 260px;
+    background: #222;
+    color: #7FE5B8;
+    text-align: center;
+    border-radius: 0.7em;
+    padding: 0.7em 1em;
+    position: absolute;
+    left: 50%;
+    bottom: 130%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-size: 0.98rem;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    box-shadow: 0 4px 18px rgba(127,229,184,0.13);
+    transition: opacity 0.25s;
+    pointer-events: none;
+}
+.info-tag:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
 /* --- 1. RESET Y VARIABLES (ESTILO SWISS/BRUTALIST) --- */
 :root {
     --bg-color: #080808;
@@ -321,6 +431,13 @@ ul ul li {
     color: #ccc;
     margin: 0;
     text-align: justify;
+}
+
+.dwn-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 2rem;
 }
 
 /* --- 10. CTA SECTION --- */
