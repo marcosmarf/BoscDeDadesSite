@@ -4,7 +4,7 @@
 
 **Bosc de Dades** és un proyecto de transferencia tecnológica y ciencia ciudadana impulsado por la universidad y el ayuntamiento local. Nuestro objetivo es desplegar una red comunitaria de sensores medioambientales y acústicos construidos y gestionados por la propia ciudadanía.
 
-![Bosc de Dades Hero Image](./plant.png) ## 📖 Sobre el Proyecto
+![Bosc de Dades Hero Image](./assets/plant.png) ## 📖 Sobre el Proyecto
 
 Este repositorio contiene el código fuente de la página web (Landing Page) del proyecto **Bosc de Dades**. La web está diseñada con una estética inspirada en la intersección entre la naturaleza y el hardware de código abierto.
 
