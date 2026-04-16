@@ -263,7 +263,7 @@
         setFeedback(tr('msg-contact-sending', 'Sending…'), 'success');
 
         try {
-            const response = await fetch('https://formspree.io/f/xnjgjyao', {
+            const response = await fetch('https://formspree.io/f/xqewpqoq', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
